@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+	<head>
+        <title>Masters academy 2019/2020</title>
+	</head>
+	<body>
+        <ol id="list"></ol>
+        <script>
+            let list = document.getElementById('list');
+
+            const fruits = ['Banana', 'Apple', 'Orange', 'Lemon'];
+            
+            for (var i = 0; i < fruits.length; i++) {
+              let li = document.createElement('li');
+              let inner;
+              if (fruits[i] == 'Apple') {
+                inner = 'Only ' + fruits[i];
+              } else {
+                inner = fruits[i];
+              }
+              li.innerHTML = inner;
+              list.appendChild(li);
+            }
+        </script>
+    </body>
+</html>
